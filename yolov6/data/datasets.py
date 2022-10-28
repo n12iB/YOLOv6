@@ -280,7 +280,6 @@ class TrainValDataset(Dataset):
             for rootdir, dirs, files in os.walk(label_dir):
                 print("root",flush=True)
                 print(rootdir,flush=True)
-                print(dirs,flush=True)
                 for subdir in dirs:
                     sub_dirs.append(subdir)
             print(sub_dirs,flush=True)
