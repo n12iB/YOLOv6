@@ -278,6 +278,7 @@ class TrainValDataset(Dataset):
             label_dir = img_dir
             
             for rootdir, dirs, files in os.walk(label_dir):
+                print("root",flush=True)
                 print(rootdir,flush=True)
                 print(dirs,flush=True)
                 for subdir in dirs:
