@@ -266,6 +266,7 @@ class TrainValDataset(Dataset):
 
         # check and load anns
         base_dir = osp.basename(img_dir)
+        print(base_dir,flush=True)
         if base_dir != "":
             label_dir = osp.join(
             osp.dirname(osp.dirname(img_dir)), "labels", osp.basename(img_dir)
@@ -274,7 +275,7 @@ class TrainValDataset(Dataset):
         else:
             sub_dirs= []
             label_dir = img_dir
-            print(label_dir,flush=True)
+            
             for rootdir, dirs, files in os.walk(label_dir):
                 print(rootdir,flush=True)
                 print(dirs,flush=True)
