@@ -266,7 +266,7 @@ class TrainValDataset(Dataset):
 
         # check and load anns
         base_dir = osp.basename(img_dir)
-        print(img_dir.split("/")[-2])
+        print(img_dir.split("/")[-3])
         if base_dir != "":
             label_dir = osp.join(
             osp.dirname(osp.dirname(img_dir)), "labels", osp.basename(img_dir)
