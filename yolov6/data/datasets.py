@@ -277,6 +277,7 @@ class TrainValDataset(Dataset):
             for rootdir, dirs, files in os.walk(label_dir):
                 for subdir in dirs:
                     sub_dirs.append(subdir)
+                print(sub_dirs)
             assert "labels" in sub_dirs, f"Could not find a labels directory!"
 
 
